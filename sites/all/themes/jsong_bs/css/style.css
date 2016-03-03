@@ -1,0 +1,87 @@
+/**
+ * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
+ * remove this comment and start adding your styles to this file.
+ */
+
+h2, .h2, h1, .h1 {
+	font-size: 2em;
+}
+a{color:#336633;}
+a:hover{color:#339900;}
+div.field-type-taxonomy-term-reference div.field-items div.field-item{
+	float:left; margin-right: 10px;
+}
+div.view-mode-full div.field-name-field-tags{
+	padding: 8px 15px;
+	margin-top: 20px;
+	list-style: none;
+	background-color: whiteSmoke;
+	border-radius: 4px;
+}
+div.field-type-taxonomy-term-reference div.field-items:after{
+	clear:both;
+}
+html.js .module-filter-inputs-wrapper input[name="module_filter[name]"] {
+	width: 100%;
+}
+input.form-control:focus {
+	border-color: #ccc;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(175, 175, 175, 0.6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(175, 175, 175, 0.6);
+}
+/* #block-search-form {width:250px} */
+.field-label{color:#999}
+
+div.node-teaser{
+	/* -webkit-box-shadow: 1px 1px 0px 0 rgba(0,0,0,.1); box-shadow: 1px 1px 0px 0 rgba(0,0,0,.1); */
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	/* border-top:0; border-left: 0; */
+	-webkit-border-radius: 0 0 60px 0; border-radius: 0 0 60px 0;
+	padding: 5px 0px 10px 10px;
+}
+div.node-teaser div.field-name-field-tags {
+	font-size: 0.8em;
+	margin-top: -10px;
+	padding-left: 20px;
+}
+/* div.node-teaser div.field-name-title{text-shadow: 1px 1px 0px #BABABA;} */
+#block-user-login i.icon-login{font-size: 2em;}
+#user-login-form div ul {float:right; margin-bottom: 0;margin-top: 6px; font-size: 1.3em}
+#user-login-form div ul li{display: inline}
+
+div.navbar-collapse nav ul.secondary li a {
+	padding: 15px 0 0 0;
+	font-size: 1.3em;
+	margin-left: 5px;
+}
+div.navbar-collapse nav ul.secondary {
+	right: -15px;
+	position: relative;
+}
+i{font-size: 1.3em}
+/*
+ul.navbar-nav li.last a{padding-top:12px; padding-bottom:0}
+ul.navbar-nav li.last a {padding-top: 15px;padding-bottom: 12px;}
+*/
+ul.navbar-nav li.last a {padding-top: 14px;padding-bottom: 10px;}
+ul.navbar-nav li.leaf a i.icon-skiing{font-size: 2em}
+ul.navbar-nav li.leaf a i.icon-home{font-size: 1.5em}
+div.view-school-listing-mobile div.view-content div.views-row{padding:5px; border-bottom:1px solid #ddd}
+div.view-school-listing-mobile div.view-content div.views-row-odd{background-color: #f9f9f9;}
+div.view-school-listing-mobile div.view-content div.views-row-last{border-bottom:none;}
+div.view-school-listing-mobile div.view-content div.views-field-nothing span.field-content a {font-size: 1.3em}
+div.view-school-listing-mobile div.view-content span.views-field span.views-label {color: #999; font-size: 0.8em;}
+div.view-school-listing-mobile div.view-content span.di{color:#ddd}
+body.front h1.page-header{display: none}
+i.icon-laptop, i.icon-mobile{font-size: 2em}
+/* #edit-field-postal-address-administrative-area{width:60px} */
+.field .field-label {font-weight:normal;}
+div.node-schools div.row div.col-sm-4{padding-top:15px}
+#block-views-185e19a708446e15ab763edc07ce8e20 div.view-display-id-block_map_schools div.view-filters{display: none}
+/* #block-system-main div.view-id-school_listing div.view-filters{display: none} */
+#block-views-185e19a708446e15ab763edc07ce8e20 div.totalcount-jsong{display:none}
+.icon.fontello {padding: 0 2px 0 0;}
+#edit-author-wrapper{width: 260px}
+.views-field-body{word-wrap: break-word;}
+section.block-tagclouds a.tagclouds{color: #cc0000;}
+section.block-tagclouds a.tagclouds:hover{color: #ff4300;}

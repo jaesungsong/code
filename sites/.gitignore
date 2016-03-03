@@ -1,0 +1,5 @@
+default/files/
+default/*settings*.php
+all/README.txt
+all/modules/README.txt
+all/themes/README.txt
