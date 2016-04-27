@@ -1,0 +1,66 @@
+<?php
+function comment_notify_admin_comment_insert($comment) {
+	dsm($comment);
+	_comment_notify_admin_send_mail($comment, 'to_admin');
+}
+function comment_notify_admin_comment_publish($comment) {
+	//_comment_notify_admin_send_mail($comment, 'to_commenter');
+  //drupal_set_message(t('Comment: @subject has been published', array('@subject' => $comment->subject)));
+}
+function comment_notify_admin_mail($key, &$message, $params){
+	switch ($key) {
+		case 'to_admin':
+			$message['subject'] = $params['subject'];
+			$message['body'] = $params['body'];
+			break;
+		case 'to_commenter':
+			$message['subject'] = $params['subject'];
+			$message['body'] = $params['body'];
+			break;
+	}
+
+}
+
+function _comment_notify_admin_send_mail($comment, $key){
+	//params is the array passed to hook_mail function
+	$params = array();
+	$node = node_load($comment->nid);
+	$nodeAuthor = user_load($node->uid);
+	$commenter = user_load($comment->uid);
+	global $base_url;
+	$nodeURL = $base_url.'/'.drupal_get_path_alias("node/{$node->nid}");
+
+	dsm('node');
+	dsm($node);
+	dsm($nodeURL);
+	dsm('commenter');
+	dsm($commenter);
+	dsm('node author');
+	dsm($nodeAuthor);
+
+	switch ($key) {
+		case 'to_admin':
+			$params['subject'] = 'A new comment is waiting for your approval';
+			$message['body'] = '';
+			$params = array(
+	    'subject' => $subject,
+	    'body' => $body,
+	    );
+			break;
+		case 'to_commenter':
+			$message['subject'] = $params['subject'];
+			$message['body'] = $params['body'];
+			break;
+	}
+
+	$to = "timestory@gmail.com"; // to e-mail address
+	$from = "jsong@digital-loom.com"; // from e-mail address
+
+	$subject = "text to display in e-mail subject"; // subject of e-mail
+	$body = "text to display in e-mail body"; //it might be any variable from the form eg. $form_state['values']['your_field']
+
+
+	//dsm($params);
+
+	//drupal_mail('comment_notify_admin', $key, $to, language_default(), $params, $from);
+}

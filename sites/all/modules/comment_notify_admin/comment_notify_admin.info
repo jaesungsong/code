@@ -1,0 +1,5 @@
+name = "Comment Notify Admin"
+core = "7.x"
+package = "Digital Loom"
+description = "Comment Notification to Administrator"
+dependencies[] = comment
